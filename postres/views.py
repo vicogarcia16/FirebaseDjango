@@ -15,11 +15,11 @@ class Postres(View):
 	template_name = "index.html"
  
 	# Llamo al archivo JSON que contiene mi clave privada 
-	cred = credentials.Certificate('./mi-proyecto-6c7dc-firebase-adminsdk-wpccn-c73c99aa72.json')
+	cred = credentials.Certificate('./') 
  
 	# Iniciamos los servicios de Firebase con las credenciales y el nombre de mi proyecto en Firebase 
 	firebase_admin.initialize_app(cred, {
-	    'databaseURL': 'https://mi-proyecto-6c7dc-default-rtdb.firebaseio.com/'
+	    'databaseURL': ''
 	})
  
 	# Accedo a la base de datos, específicamente a la tabla 'postres' 
